@@ -1,0 +1,165 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body, html, input, textarea {
+    font-family: 'PT Sans', sans-serif
+}
+
+input, textarea {
+    font-style: italic;
+    color: #CCCCCC;
+}
+
+input:focus, textarea:focus {
+    font-style: normal;
+    color: #210200;
+}
+
+input:user-valid, textarea:user-valid {
+    font-style: normal;
+    color: #210200;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+#header-links {
+    margin-left: 3em;
+    cursor: default;
+}
+
+.link a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    background: #333;
+    transition: all 0.45s;
+}
+  
+.link a:hover:after {
+    width: 100%;
+    left: 0;
+}
+  
+.link a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link {
+    margin: 0.5em;
+    padding: 0.5em 4em; 
+    list-style: none;
+    position: relative;
+    display: inline;
+    cursor: default;
+}
+
+.active {
+    background-color: #FAFAFA;
+    border: solid 0.1pt #000000;
+    border-radius: 0.5em;
+    cursor: default;
+}
+
+form {
+    width: 100%;
+    margin: 1em 3em;
+}
+
+label {
+    display: none;
+}
+
+#content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#name, #contact {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 2em;
+}
+
+#contact {
+    margin-bottom: 2em;
+}
+
+#f_fname, #f_lname, #f_email, #f_org {
+    width: 100%;
+    margin: 0 0.25em;
+    padding: 0.25em;
+    font-size: 24px;
+    border: none;
+    box-shadow: #EFEFEF 0 2px 6px;
+    transition: box-shadow 150ms cubic-bezier(.44,.15,.93,.37);
+}
+
+#f_fname:focus, #f_lname:focus, #f_email:focus, #f_org:focus, #f_msg:focus {
+    outline: none;
+    box-shadow: #AAAAAA 0 2px 6px;
+}
+
+#message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#f_msg {
+    min-width: 91%;
+    max-width: 91%;
+    min-height: 16em;
+    max-height: 16em;
+    margin: 0 1em;
+    padding: 0.5em;
+    font-size: 22px;
+    border: none;
+    line-height: 30px;
+    box-shadow: #EFEFEF 0 2px 6px;
+}
+
+#submit {
+    width: 100%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type='submit'] {
+    font-size: 20px;
+    margin: 0 2em;
+    height: 2em;
+    width: 8em;
+}

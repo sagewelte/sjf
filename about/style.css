@@ -1,0 +1,128 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'PT Sans', sans-serif
+}
+
+h1 {
+    margin: 0 0 0.25em 0;
+    padding: 0;
+    width: auto;
+}
+
+h2 {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+#header-links {
+    margin-left: 3em;
+    cursor: default;
+}
+
+.link a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.link a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    background: #333;
+    transition: all 0.45s;
+}
+  
+.link a:hover:after {
+    width: 100%;
+    left: 0;
+}
+  
+.link a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link {
+    margin: 0.5em;
+    padding: 0.5em 4em; 
+    list-style: none;
+    position: relative;
+    display: inline;
+    cursor: default;
+}
+
+.active {
+    background-color: #FAFAFA;
+    border: solid 0.1pt #000000;
+    border-radius: 0.5em;
+    cursor: default;
+}
+
+#content {
+    width: 50%;
+    align-self: center;
+}
+
+#placard {
+    display: flex;
+    flex-direction: row;
+}
+
+#text {
+    width: 50%;
+    margin: 0 2em;
+    font-style: italic;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+#text h1 {
+    font-style: normal;
+}
+
+#picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#name-prof {
+    margin-bottom: 2em;
+}
+
+#quote {
+    margin: 2em 0 0 0;
+}
+
+.m {
+    margin-right: 1.5em;
+}
+
+#bio {
+    margin: 2em 1.5em 2em 0;
+}

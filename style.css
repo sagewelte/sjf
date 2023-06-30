@@ -1,0 +1,70 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#monogram {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: 8em 0em;
+}
+
+#firstNames {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 2em 0;
+}
+
+#s, #j {
+    margin: 0.5em 1.75em;
+}
+
+#f {
+    margin: 6.75em 0 0 1.5em;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+}
+  
+.link {
+    list-style: none;
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+
+#links a {
+    color: #000;
+    text-decoration: none;
+}
+  
+#links a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    background: #333;
+    transition: all 0.45s;
+}
+  
+#links a:hover:after {
+    width: 100%;
+    left: 0;
+}
+  
+#links .link a:hover {
+    text-decoration: none;
+}
